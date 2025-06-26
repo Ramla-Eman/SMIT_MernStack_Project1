@@ -9,7 +9,7 @@ const ProductList = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/product`);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products`);
       const data = await response.json();
       setProducts(data);
     };
