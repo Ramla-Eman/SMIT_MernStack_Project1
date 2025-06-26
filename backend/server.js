@@ -14,11 +14,11 @@ app.use(express.json());
 app.use('/api', uploadRoutes);
 app.use("/api/products", productRoutes)
 
-// app.get("/", (req, res) => {
-//   res.send("hello world");
-// });
+app.get("/", (req, res) => {
+  res.send("api is running");
+});
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const url = process.env.MONGODB_URL;
 mongoose
   .connect(url)
