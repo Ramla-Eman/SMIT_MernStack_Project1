@@ -8,7 +8,7 @@ const SearchFilter = ({ keyword, onChange }) => {
   return (
     <>
       {/* Search icon in navbar */}
-      <div className="relative z-50 rounded px-2 py-2 md:bg-[#F5F5F5] flex items-center md:w-[284px] m-4">
+      <div className="relative z-50 rounded px-2 py-2 md:bg-[#F5F5F5] flex items-center md:w-full m-4">
         {/* Input for desktop/tab */}
         <input
           type="text"
@@ -26,7 +26,7 @@ const SearchFilter = ({ keyword, onChange }) => {
 
       {/* Mobile full search input */}
       {showMobileSearch && (
-        <div className="md:hidden w-full px-4 py-3 bg-[#F5F5F5] flex absolute top-[70px] left-0 z-40 transition-all duration-300">
+        <div className="md:hidden relative w-full px-4 py-3 bg-[#F5F5F5] flex transition-all duration-300">
           <input
             type="text"
             placeholder="What are you looking for?"
@@ -35,7 +35,7 @@ const SearchFilter = ({ keyword, onChange }) => {
             className="w-full px-4 py-2 outline-none rounded "
           />
           <IoIosClose
-            className="absolute right-4 top-5 cursor-pointer text-4xl text-[#DB4444]"
+            className="absolute right-4 top-4 cursor-pointer text-4xl text-[#DB4444]"
             onClick={() => setShowMobileSearch(!showMobileSearch)}
           />
         </div>

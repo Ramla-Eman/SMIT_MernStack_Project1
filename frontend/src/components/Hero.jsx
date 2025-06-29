@@ -12,7 +12,7 @@ const Hero = () => {
             New Trend
           </div>
           {/* title */}
-          <h1 className="text-[70px] uppercase leading-[1.1] font-light mb-4">
+          <h1 className="md:text-[70px] sm:text-[60px] text-[40px] uppercase leading-[1.1] font-light mb-4">
             Explore Furniture,<br /> Electronics & More
           </h1>
           <p
